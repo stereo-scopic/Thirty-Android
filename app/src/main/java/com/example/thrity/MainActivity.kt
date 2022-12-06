@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(viewBinding.root)
 
+
         supportFragmentManager
             .beginTransaction()
             .replace(viewBinding.containerFragment.id, ChallengeFragment())

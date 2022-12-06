@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutListItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="24dp">
+
+    <ImageView
+        android:id="@+id/list_item_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list_item_example" />
+
+    <TextView
+        android:id="@+id/tv_listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="챌린지 이름"
+        android:textColor="@color/THIRTY_BLACK"
+        app:layout_constraintStart_toStartOf="@+id/list_item_example"
+        app:layout_constraintTop_toBottomOf="@+id/list_item_example" />
+
+    <TextView
+        android:id="@+id/tv_listDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="챌린지 설명...블라블라"
+        app:layout_constraintStart_toStartOf="@+id/tv_listTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_listTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

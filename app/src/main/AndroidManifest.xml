@@ -14,9 +14,12 @@
         android:theme="@style/Theme.Thrity"
         tools:targetApi="31">
         <activity
+            android:name=".Hobby"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:theme="@style/TransparentStatusTheme"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/TransparentStatusTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
