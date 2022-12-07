@@ -32,6 +32,50 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow_left" />
 
+    <TextView
+        android:id="@+id/tv_alarm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        android:text="친구 신청 수신 알림 받기"
+        android:textColor="@color/THIRTY_BLACK"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+    <TextView
+        android:id="@+id/tv_alarm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="친구 신청 수락 시 알림 받기"
+        android:textColor="@color/THIRTY_BLACK"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_alarm1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alarm1" />
+
+    <TextView
+        android:id="@+id/tv_alarm3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="친구의 챌린지 완수 소식 받기"
+        android:textColor="@color/THIRTY_BLACK"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_alarm2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alarm2" />
+
+    <TextView
+        android:id="@+id/tv_alarm4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="친구의 질문 답변 소식 받기"
+        android:textColor="@color/THIRTY_BLACK"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_alarm3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alarm3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
