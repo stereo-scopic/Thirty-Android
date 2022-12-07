@@ -17,6 +17,10 @@ class Hobby : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(viewBinding.root)
 
+        viewBinding.btnBack.setOnClickListener {
+            finish()
+        }
+
         var list: ArrayList<String> = arrayListOf()
         var listManager = GridLayoutManager(this, 2)
         listAdapter = ListAdapterGrid(list)
