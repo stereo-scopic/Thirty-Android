@@ -21,6 +21,36 @@ class ExploreFragment: Fragment() {
             val intent = Intent(context, Hobby::class.java)
             startActivity(intent)
         }
+
+        viewBinding.exploreFan.setOnClickListener{
+            val intent = Intent(context, Fan::class.java)
+            startActivity(intent)
+        }
+
+        viewBinding.exploreLove.setOnClickListener{
+            val intent = Intent(context, Love::class.java)
+            startActivity(intent)
+        }
+
+        viewBinding.exploreCare.setOnClickListener {
+            val intent = Intent(context, Care::class.java)
+            startActivity(intent)
+        }
+
+        viewBinding.exploreDiet.setOnClickListener {
+            val intent = Intent(context, Diet::class.java)
+            startActivity(intent)
+        }
+
+        viewBinding.exploreFitness.setOnClickListener {
+            val intent = Intent(context, Fitness::class.java)
+            startActivity(intent)
+        }
+
+        viewBinding.exploreStudy.setOnClickListener {
+            val intent = Intent(context, Study::class.java)
+            startActivity(intent)
+        }
         return viewBinding.root
     }
 }
