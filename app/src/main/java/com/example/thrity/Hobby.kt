@@ -10,8 +10,6 @@ class Hobby : AppCompatActivity() {
     private val viewBinding: ActivityHobbyBinding by lazy {
         ActivityHobbyBinding.inflate(layoutInflater)
     }
-    private lateinit var gridManager: GridLayoutManager
-    private lateinit var listAdapter: ListAdapterGrid
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,14 +19,24 @@ class Hobby : AppCompatActivity() {
             finish()
         }
 
-        var list: ArrayList<String> = arrayListOf()
-        var listManager = GridLayoutManager(this, 2)
-        listAdapter = ListAdapterGrid(list)
-        viewBinding.rvHobby.apply {
-            layoutManager = listManager
-            adapter = listAdapter
+        //Recycler View
+        val list: ArrayList<Data> = arrayListOf()
+
+        list.apply {
+            add(Data("최애 아이돌 챌린지", "챌린지 설명 블라블라"))
+            add(Data("최애 사진 챌린지", "챌린지 설명 블라블라"))
+            add(Data("최애 배우 챌린지", "챌린지 설명 블라블라"))
+            add(Data("최애 작품 챌린지", "챌린지 설명 블라블라"))
+            add(Data("최애 레전드 모먼트 챌린지", "챌린지 설명 블라블라"))
+            add(Data("최애 드로잉 챌린지", "챌린지 설명 블라블라"))
+            add(Data("최애 공통점 찾기 챌린지", "챌린지 설명 블라블라"))
+            add(Data("최애 손민수 챌린지", "챌린지 설명 블라블라"))
         }
 
+        val listManager = GridLayoutManager(this, 2)
+        val listAdapter = ListAdapterGrid(list)
+        viewBinding.rvHobby.adapter = listAdapter
+        viewBinding.rvHobby.layoutManager = listManager
 
     }
 }

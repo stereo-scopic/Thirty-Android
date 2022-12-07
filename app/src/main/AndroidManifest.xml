@@ -14,39 +14,18 @@
         android:theme="@style/Theme.Thrity"
         tools:targetApi="31">
         <activity
+            android:name=".SettingShareRange"
+            android:exported="false" />
+        <activity
             android:name=".SettingAlarm"
             android:exported="false"
-            android:theme="@style/TransparentStatusTheme"/>
+            android:theme="@style/TransparentStatusTheme" />
         <activity
             android:name=".SettingMy"
             android:exported="false"
             android:theme="@style/TransparentStatusTheme" />
         <activity
             android:name=".Setting"
-            android:exported="false"
-            android:theme="@style/TransparentStatusTheme" />
-        <activity
-            android:name=".Study"
-            android:exported="false"
-            android:theme="@style/TransparentStatusTheme" />
-        <activity
-            android:name=".Fitness"
-            android:exported="false"
-            android:theme="@style/TransparentStatusTheme" />
-        <activity
-            android:name=".Diet"
-            android:exported="false"
-            android:theme="@style/TransparentStatusTheme" />
-        <activity
-            android:name=".Care"
-            android:exported="false"
-            android:theme="@style/TransparentStatusTheme" />
-        <activity
-            android:name=".Love"
-            android:exported="false"
-            android:theme="@style/TransparentStatusTheme" />
-        <activity
-            android:name=".Fan"
             android:exported="false"
             android:theme="@style/TransparentStatusTheme" />
         <activity
