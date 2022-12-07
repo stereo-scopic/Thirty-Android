@@ -18,4 +18,6 @@
     <color name="Gray_100">#FFF5F5F5</color>
     <color name="Gray_50">#FFFAFAFA</color>
     <color name="THIRTY_WHITE">#FFFFFFFF</color>
+    <color name="THIRTY_RED">#FFFF4E48</color>
+
 </resources>
