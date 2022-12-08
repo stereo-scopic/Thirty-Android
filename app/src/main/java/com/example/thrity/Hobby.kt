@@ -38,5 +38,9 @@ class Hobby : AppCompatActivity() {
         viewBinding.rvHobby.adapter = listAdapter
         viewBinding.rvHobby.layoutManager = listManager
 
+        //제목 변경
+        val titleData = intent.getStringExtra("TitleData")
+        viewBinding.titleSetting. text = titleData
+
     }
 }
