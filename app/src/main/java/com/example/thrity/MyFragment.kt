@@ -23,6 +23,11 @@ class MyFragment: Fragment() {
             startActivity(intent)
         }
 
+        viewBinding.tvNotice.setOnClickListener {
+            val intent = Intent(context, Notice::class.java)
+            startActivity(intent)
+        }
+
         return viewBinding.root
     }
 }
