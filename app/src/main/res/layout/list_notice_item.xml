@@ -7,11 +7,10 @@
 
     <TextView
         android:id="@+id/tv_notice_desc"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
         android:text="나는야 써티 작업중"
         android:textColor="@color/THIRTY_BLACK"
         android:textSize="16sp"
