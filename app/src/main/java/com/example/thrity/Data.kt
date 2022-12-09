@@ -17,7 +17,7 @@ data class ComData(
     val challenge: String,
     val num: String,
     val title: String,
-    val image: Image,
+    //val image: Image,
     val desc: String,
     val date: String,
 )

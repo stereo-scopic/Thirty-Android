@@ -21,13 +21,14 @@
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/activity_setting_alarm.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_challenge.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_challenge_all.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_community.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_community_all.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_community.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_community_all.xml" value="0.1" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_community_friend.xml" value="0.30085470085470084" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_explore.xml" value="0.2982292637465051" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_my.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/list_community_item.xml" value="0.22" />
+        <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/list_community_item.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/list_grid_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/list_notice_item.xml" value="0.26358695652173914" />
       </map>
     </option>
   </component>
