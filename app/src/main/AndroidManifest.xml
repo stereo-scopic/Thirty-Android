@@ -14,13 +14,17 @@
         android:theme="@style/Theme.Thrity"
         tools:targetApi="31">
         <activity
-            android:name=".Notice"
+            android:name=".ChallengePost"
             android:exported="false"
             android:theme="@style/TransparentStatusTheme"/>
         <activity
+            android:name=".Notice"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
             android:name=".SettingShareRange"
             android:exported="false"
-            android:theme="@style/TransparentStatusTheme"/>
+            android:theme="@style/TransparentStatusTheme" />
         <activity
             android:name=".SettingAlarm"
             android:exported="false"
