@@ -27,8 +27,10 @@
         app:labelVisibilityMode="labeled"
         app:itemIconTint="@drawable/menu_selector_color"
         app:itemTextColor="@drawable/menu_selector_color"
+        app:itemBackground="@drawable/nav_shape"
         android:background="@color/Gray_100"
         android:backgroundTint="@color/Gray_100"
-        android:pointerIcon="none"/>
+        android:pointerIcon="none"
+        android:theme="@style/BottomNavigationViewTextStyle"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

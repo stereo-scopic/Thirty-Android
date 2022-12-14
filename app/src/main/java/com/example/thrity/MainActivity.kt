@@ -2,7 +2,9 @@ package com.example.thrity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import com.example.thrity.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private val viewBinding: ActivityMainBinding by lazy {
@@ -12,7 +14,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(viewBinding.root)
-
 
         supportFragmentManager
             .beginTransaction()
@@ -27,24 +28,40 @@ class MainActivity : AppCompatActivity() {
                             .beginTransaction()
                             .replace(viewBinding.containerFragment.id, ChallengeFragment())
                             .commitAllowingStateLoss()
+                        it.setIcon(R.drawable.nav_challenge_select)
+                        menu.findItem(R.id.menu_explore).setIcon(R.drawable.nav_explore)
+                        menu.findItem(R.id.menu_community).setIcon(R.drawable.nav_community_select)
+                        menu.findItem(R.id.menu_my).setIcon(R.drawable.nav_my)
                     }
                     R.id.menu_explore -> {
                         supportFragmentManager
                             .beginTransaction()
                             .replace(viewBinding.containerFragment.id, ExploreFragment())
                             .commitAllowingStateLoss()
+                        it.setIcon(R.drawable.nav_explore_select)
+                        menu.findItem(R.id.menu_challenge).setIcon(R.drawable.nav_challenge)
+                        menu.findItem(R.id.menu_community).setIcon(R.drawable.nav_community_select)
+                        menu.findItem(R.id.menu_my).setIcon(R.drawable.nav_my)
                     }
                     R.id.menu_community -> {
                         supportFragmentManager
                             .beginTransaction()
                             .replace(viewBinding.containerFragment.id, CommunityFragment())
                             .commitAllowingStateLoss()
+                        it.setIcon(R.drawable.nav_community_select)
+                        menu.findItem(R.id.menu_explore).setIcon(R.drawable.nav_explore)
+                        menu.findItem(R.id.menu_challenge).setIcon(R.drawable.nav_challenge)
+                        menu.findItem(R.id.menu_my).setIcon(R.drawable.nav_my)
                     }
                     R.id.menu_my -> {
                         supportFragmentManager
                             .beginTransaction()
                             .replace(viewBinding.containerFragment.id, MyFragment())
                             .commitAllowingStateLoss()
+                        it.setIcon(R.drawable.nav_my_select)
+                        menu.findItem(R.id.menu_explore).setIcon(R.drawable.nav_explore)
+                        menu.findItem(R.id.menu_community).setIcon(R.drawable.nav_community_select)
+                        menu.findItem(R.id.menu_challenge).setIcon(R.drawable.nav_challenge)
                     }
                 }
                 true
