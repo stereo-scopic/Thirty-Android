@@ -1,5 +1,7 @@
 package com.example.thrity
 
+import android.annotation.SuppressLint
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
@@ -13,15 +15,20 @@ class SettingShareRange : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(viewBinding.root)
 
+
+
         viewBinding.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+            @SuppressLint("UseCompatLoadingForDrawables")
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 if (progress == 0) {
-                    viewBinding.image.setImageResource(R.drawable.my_sharesetting_1)
+                    viewBinding.image.setImageResource(R.drawable.my_sharesetting_1_size)
+                    viewBinding.seekBar.thumb = getDrawable(R.drawable.seekbar_thumb)
                 }else if (progress == 1){
-                    viewBinding.image.setImageResource(R.drawable.my_sharesetting_2)
+                    viewBinding.image.setImageResource(R.drawable.my_sharesetting_2_size)
+                    viewBinding.seekBar.thumb = getDrawable(R.drawable.seekbar_thumb)
                 }else if (progress == 2){
-                    viewBinding.image.setImageResource(R.drawable.my_sharesetting_3)
-                    //viewBinding.seekBar.thumb.setImageResource(R.drawable.seekbar_thumb2)
+                    viewBinding.image.setImageResource(R.drawable.my_sharesetting_3_size)
+                    viewBinding.seekBar.thumb = getDrawable(R.drawable.seekbar_thumb2)
                 }
             }
 

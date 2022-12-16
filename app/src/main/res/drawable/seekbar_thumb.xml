@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/seekbar_thumb_1"
         android:width="35dp"
-        android:height="40dp"
+        android:height="42dp"
         android:left="10dp"
         android:right="10dp"
         android:bottom="25dp">

@@ -34,28 +34,28 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="185dp"
-        android:layout_height="206dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="114dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_settingShareRange"
-        app:srcCompat="@drawable/my_sharesetting_1" />
+        app:srcCompat="@drawable/my_sharesetting_1_size" />
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="15dp"
         android:background="@null"
         android:max="2"
         android:progress="0"
         android:progressDrawable="@drawable/seekbar"
-        android:thumbOffset="@android:dimen/system_app_widget_background_radius"
         android:splitTrack="false"
         android:thumb="@drawable/seekbar_thumb"
+        android:thumbOffset="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image" />
