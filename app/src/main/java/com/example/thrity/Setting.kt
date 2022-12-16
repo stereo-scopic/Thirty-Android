@@ -26,5 +26,10 @@ class Setting : AppCompatActivity() {
             val intent = Intent(this, SettingAlarm::class.java)
             startActivity(intent)
         }
+
+        viewBinding.tvShareRange.setOnClickListener {
+            val intent = Intent(this, SettingShareRange::class.java)
+            startActivity(intent)
+        }
     }
 }
