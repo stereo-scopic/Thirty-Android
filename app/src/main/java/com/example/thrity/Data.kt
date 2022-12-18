@@ -21,3 +21,7 @@ data class ComData(
     val desc: String,
     val date: String,
 )
+
+data class ChallengeGridData(
+    val num: String,
+)
