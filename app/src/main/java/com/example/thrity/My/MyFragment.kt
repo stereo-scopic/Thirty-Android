@@ -1,4 +1,4 @@
-package com.example.thrity
+package com.example.thrity.My
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.thrity.databinding.FragmentExploreBinding
 import com.example.thrity.databinding.FragmentMyBinding
 
 class MyFragment: Fragment() {

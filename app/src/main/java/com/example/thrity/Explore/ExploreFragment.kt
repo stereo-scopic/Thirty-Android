@@ -1,4 +1,4 @@
-package com.example.thrity
+package com.example.thrity.Explore
 
 import android.content.Intent
 import android.os.Bundle

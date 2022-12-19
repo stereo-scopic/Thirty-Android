@@ -2,9 +2,11 @@ package com.example.thrity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
+import com.example.thrity.Challenge.ChallengeFragment
+import com.example.thrity.Community.CommunityFragment
+import com.example.thrity.Explore.ExploreFragment
+import com.example.thrity.My.MyFragment
 import com.example.thrity.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private val viewBinding: ActivityMainBinding by lazy {

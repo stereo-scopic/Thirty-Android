@@ -1,10 +1,11 @@
-package com.example.thrity
+package com.example.thrity.Explore
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.thrity.Data
+import com.example.thrity.Explore.Adaptor.ListAdapterGrid
 import com.example.thrity.databinding.ActivityHobbyBinding
-import com.example.thrity.databinding.ActivityMainBinding
 
 class Hobby : AppCompatActivity() {
     private val viewBinding: ActivityHobbyBinding by lazy {

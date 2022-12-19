@@ -1,9 +1,11 @@
-package com.example.thrity
+package com.example.thrity.My
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.thrity.My.Adaptor.ListNoticeAdaptor
 import com.example.thrity.databinding.ActivityNoticeBinding
+import com.example.thrity.noticeData
 
 class Notice : AppCompatActivity() {
     private val viewBinding : ActivityNoticeBinding by lazy {

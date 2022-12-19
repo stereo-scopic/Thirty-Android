@@ -1,4 +1,4 @@
-package com.example.thrity.My.Adapter
+package com.example.thrity.My.Adaptor
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

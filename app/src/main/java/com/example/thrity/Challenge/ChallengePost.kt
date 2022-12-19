@@ -1,4 +1,4 @@
-package com.example.thrity
+package com.example.thrity.Challenge
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

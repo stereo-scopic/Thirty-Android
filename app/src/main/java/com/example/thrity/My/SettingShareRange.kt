@@ -1,10 +1,10 @@
-package com.example.thrity
+package com.example.thrity.My
 
 import android.annotation.SuppressLint
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
+import com.example.thrity.R
 import com.example.thrity.databinding.ActivitySettingShareRangeBinding
 
 class SettingShareRange : AppCompatActivity() {

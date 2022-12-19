@@ -1,4 +1,4 @@
-package com.example.thrity.Community.Adapter
+package com.example.thrity.Community.Adaptor
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter

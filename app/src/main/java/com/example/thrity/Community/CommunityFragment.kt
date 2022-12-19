@@ -1,12 +1,12 @@
-package com.example.thrity
+package com.example.thrity.Community
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.thrity.Community.Adaptor.CommunityVPAdaptor
 import com.example.thrity.databinding.FragmentCommunityBinding
-import com.example.thrity.databinding.FragmentExploreBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
 

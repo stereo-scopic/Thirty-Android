@@ -1,4 +1,4 @@
-package com.example.thrity
+package com.example.thrity.Community
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.thrity.ComData
+import com.example.thrity.Community.Adaptor.ListCommunityAdaptor
 import com.example.thrity.databinding.FragmentCommunityAllBinding
 
 class CommunityAllFragment: Fragment() {
