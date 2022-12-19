@@ -29,3 +29,7 @@ data class ChallengeGridData(
 data class ChallengeListData(
     val title: String,
 )
+data class ChallengeAddGridData(
+    val num: String,
+    val title: String
+)

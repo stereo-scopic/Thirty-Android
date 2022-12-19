@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.thrity">
+    <!-- 갤러리 권한 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 갤러리 권한 -->
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -14,9 +19,21 @@
         android:theme="@style/Theme.Thrity"
         tools:targetApi="31">
         <activity
-            android:name=".Challenge.ChallengePost"
+            android:name=".Explore.ChallengeDetail"
             android:exported="false"
             android:theme="@style/TransparentStatusTheme"/>
+        <activity
+            android:name=".My.DoneChallenge"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".My.Badge"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".Challenge.ChallengePost"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
         <activity
             android:name=".My.Notice"
             android:exported="false"
@@ -52,13 +69,5 @@
             </intent-filter>
         </activity>
     </application>
-
-    <!--갤러리 권한-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!--갤러리 권한-->
-    <uses-permission android:name="android.permission.CAMERA"/>
 
 </manifest>

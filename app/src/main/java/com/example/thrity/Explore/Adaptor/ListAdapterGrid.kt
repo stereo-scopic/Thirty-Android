@@ -1,17 +1,26 @@
 package com.example.thrity.Explore.Adaptor
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.thrity.Explore.ChallengeDetail
 import com.example.thrity.Data
 import com.example.thrity.databinding.ListGridItemBinding
 
 class ListAdapterGrid (var list: ArrayList<Data>): RecyclerView.Adapter<ListAdapterGrid.DataViewHolder>(){
 
     inner class DataViewHolder(private val viewBinding: ListGridItemBinding): RecyclerView.ViewHolder(viewBinding.root) {
+        private val context = viewBinding.root.context
         fun bind(data: Data) = with(viewBinding) {
             tvListTitle.text = data.title
             tvListDes.text = data.desc
+
+            itemView.setOnClickListener {
+                val intent = Intent(context, ChallengeDetail::class.java)
+                //intent.putExtra("data", item);
+                intent.run { context.startActivity(this) }
+            }
         }
     }
 
