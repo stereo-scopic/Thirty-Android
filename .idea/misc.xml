@@ -18,6 +18,7 @@
         <entry key="..\:/Thirty/app/src/main/res/menu/menu_bottom.xml" value="0.18177083333333333" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/drawable/menu_selector_color.xml" value="0.313" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/drawable/my_shareme_size.xml" value="0.1" />
+        <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/drawable/my_sharesetting_1_size.xml" value="0.198" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/drawable/my_sharesetting_2_size.xml" value="0.1" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/drawable/my_sharesetting_3_size.xml" value="0.1" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/drawable/nav_shape.xml" value="0.313" />
@@ -34,6 +35,7 @@
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/activity_setting_alarm.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/activity_setting_my.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/activity_setting_share_range.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/challenge_grid_item.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_challenge.xml" value="0.22" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_challenge_all.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC/Documents/Thirty/app/src/main/res/layout/fragment_community.xml" value="0.16666666666666666" />
