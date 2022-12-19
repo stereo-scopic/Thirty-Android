@@ -1,9 +1,9 @@
-package com.example.thrity
+package com.example.thrity.Explore.Adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.thrity.Data
 import com.example.thrity.databinding.ListGridItemBinding
 
 class ListAdapterGrid (var list: ArrayList<Data>): RecyclerView.Adapter<ListAdapterGrid.DataViewHolder>(){

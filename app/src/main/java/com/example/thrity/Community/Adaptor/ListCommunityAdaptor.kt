@@ -1,10 +1,10 @@
-package com.example.thrity
+package com.example.thrity.Community.Adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.thrity.ComData
 import com.example.thrity.databinding.ListCommunityItemBinding
-import com.example.thrity.databinding.ListNoticeItemBinding
 
 class ListCommunityAdaptor (private val communityList: ArrayList<ComData>) : RecyclerView.Adapter<ListCommunityAdaptor.ComDataViewHolder>() {
     inner class ComDataViewHolder(private val viewBinding: ListCommunityItemBinding) : RecyclerView.ViewHolder(viewBinding.root){

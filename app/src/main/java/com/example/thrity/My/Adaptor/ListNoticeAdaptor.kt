@@ -1,9 +1,10 @@
-package com.example.thrity
+package com.example.thrity.My.Adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.thrity.databinding.ListNoticeItemBinding
+import com.example.thrity.noticeData
 
 class ListNoticeAdaptor (private val noticeList: ArrayList<noticeData>) : RecyclerView.Adapter<ListNoticeAdaptor.noticeDataViewHolder>(){
     inner class noticeDataViewHolder(private val viewBinding: ListNoticeItemBinding) : RecyclerView.ViewHolder(viewBinding.root){

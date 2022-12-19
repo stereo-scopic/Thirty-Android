@@ -1,7 +1,9 @@
-package com.example.thrity
+package com.example.thrity.Community.Adapter
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.thrity.Community.CommunityAllFragment
+import com.example.thrity.Community.CommunityFriendFragment
 
 class CommunityVPAdaptor (fragment: Fragment) : FragmentStateAdapter(fragment){
     override fun getItemCount(): Int = 2
