@@ -22,6 +22,16 @@ class MyFragment: Fragment() {
             startActivity(intent)
         }
 
+        viewBinding.tvFinishNum.setOnClickListener {
+            val intent = Intent(context, DoneChallenge::class.java)
+            startActivity(intent)
+        }
+
+        viewBinding.tvBadgeNum.setOnClickListener {
+            val intent = Intent(context, Badge::class.java)
+            startActivity(intent)
+        }
+
         viewBinding.tvNotice.setOnClickListener {
             val intent = Intent(context, Notice::class.java)
             startActivity(intent)
