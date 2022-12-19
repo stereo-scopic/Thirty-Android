@@ -1,4 +1,4 @@
-package com.example.thrity.Challenge.Adapter
+package com.example.thrity.Challenge.Adaptor
 
 import android.graphics.Color
 import android.view.LayoutInflater
