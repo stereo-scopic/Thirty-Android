@@ -24,11 +24,6 @@ class ChallengeFragment: Fragment() {
     ): View? {
         viewBinding = FragmentChallengeBinding.inflate(layoutInflater)
 
-        viewBinding.btnPost.setOnClickListener {
-            val intent = Intent(context, ChallengePost::class.java)
-            startActivity(intent)
-        }
-
         //List RecyclerView
         val list: ArrayList<ChallengeListData> = arrayListOf()
         list.apply {

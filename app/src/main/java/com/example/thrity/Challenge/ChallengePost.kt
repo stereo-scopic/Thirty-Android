@@ -24,8 +24,13 @@ class ChallengePost : AppCompatActivity() {
         viewBinding.btnBack.setOnClickListener {
             finish()
         }
+
+        val titleNum = intent.getStringExtra("numData")
+        viewBinding.tvNum.text = "#"+titleNum
     }
 
+    //사진
+    //갤러리 접근 권한
     private val permissionList = arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE)
     private val checkPermission = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { result ->
         result.forEach {
@@ -35,7 +40,7 @@ class ChallengePost : AppCompatActivity() {
             }
         }
     }
-
+    //사진 가져오기
     private val readImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
         Glide.with(this)
             .load(uri)
