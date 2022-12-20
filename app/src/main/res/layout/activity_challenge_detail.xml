@@ -36,12 +36,78 @@ tools:context=".Explore.ChallengeDetail">
                 android:id="@+id/rv_challengeAdd"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="최애 공통점 찾기 챌린지"
+                android:textColor="@color/THIRTY_BLACK"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/rv_challengeAdd"
+                app:layout_constraintTop_toBottomOf="@+id/rv_challengeAdd" />
+
+            <TextView
+                android:id="@+id/tv_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="25명이 이 챌린지를 하고 있어요"
+                app:layout_constraintStart_toStartOf="@+id/tv_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+            <Button
+                android:id="@+id/btn_challengeAdd"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@color/THIRTY_BLACK"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="추가하기"
+                android:textColor="@color/THIRTY_WHITE"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_people"
+                app:layout_constraintEnd_toEndOf="@id/rv_challengeAdd"
+                app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="start|fill_horizontal"
+                android:text="최애의 라이프스타일을 하나씩 파헤쳐보고 공통점을 찾아보자!"
+                android:textColor="@color/THIRTY_BLACK"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_people" />
+
+            <Button
+                android:id="@+id/btn_challengeClicked"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@color/Gray_300"
+                android:fontFamily="@font/pretendard_semibold"
+                android:stateListAnimator="@null"
+                android:text="추가됨"
+                android:textColor="@color/THIRTY_WHITE"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_people"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_title" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 

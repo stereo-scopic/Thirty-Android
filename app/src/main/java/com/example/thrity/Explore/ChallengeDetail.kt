@@ -2,6 +2,7 @@ package com.example.thrity.Explore
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.thrity.Explore.Adaptor.ListChallengeAddGridAdaptor
 import com.example.thrity.ChallengeAddGridData
@@ -28,5 +29,11 @@ class ChallengeDetail : AppCompatActivity() {
         viewBinding.rvChallengeAdd.adapter = gridListAdapter
         viewBinding.rvChallengeAdd.layoutManager = gridListManager
         viewBinding.rvChallengeAdd.addItemDecoration(ItemDecorator(0))
+
+        viewBinding.btnChallengeAdd.setOnClickListener {
+            viewBinding.btnChallengeAdd.visibility = View.GONE
+            viewBinding.btnChallengeClicked.visibility = View.VISIBLE
+        }
     }
+
 }
