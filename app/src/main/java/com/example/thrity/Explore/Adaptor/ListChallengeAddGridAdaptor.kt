@@ -14,6 +14,7 @@ class ListChallengeAddGridAdaptor (var challengeAddGridList: ArrayList<Challenge
         @SuppressLint("ResourceAsColor")
         fun bind(data: ChallengeAddGridData) = with(viewBinding){
             tvGridNum.text = data.num
+            tvTitle.text = data.title
 
             //6의 배수 처리
             if(tvGridNum.text.toString().toInt() % 6 == 0){
