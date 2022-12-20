@@ -2,6 +2,7 @@ package com.example.thrity.Explore.Adaptor
 
 import android.content.Intent
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.thrity.Explore.ChallengeDetail
@@ -17,6 +18,8 @@ class ListAdapterGrid (var list: ArrayList<Data>): RecyclerView.Adapter<ListAdap
             tvListDes.text = data.desc
 
             itemView.setOnClickListener {
+                viewBinding.imgCheck.visibility = View.VISIBLE
+                viewBinding.btnAdd.visibility = View.GONE
                 val intent = Intent(context, ChallengeDetail::class.java)
                 //intent.putExtra("data", item);
                 intent.run { context.startActivity(this) }

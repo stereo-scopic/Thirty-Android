@@ -43,13 +43,6 @@ class Hobby : AppCompatActivity() {
         viewBinding.rvHobby.layoutManager = listManager
         viewBinding.rvHobby.addItemDecoration(ItemDecorator(-10))
 
-//        val cAdapter = ListAdapterGrid(list)
-//        cAdapter.setItemClickListener(object : ListAdapterGrid.ItemClickListener{
-//            override fun onItemClick(position: Int) {
-//                val intent = Intent(this, ChallengePost::class.java)
-//                startActivity(intent)
-//            }
-//        })
 
         //제목 변경
         val titleData = intent.getStringExtra("TitleData")
