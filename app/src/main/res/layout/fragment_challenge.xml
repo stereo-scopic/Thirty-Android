@@ -138,13 +138,126 @@
             </androidx.recyclerview.widget.RecyclerView>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_non"
                 android:layout_width="match_parent"
                 android:layout_height="259dp"
+                android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rv_challenge">
 
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/blatant_bold"
+                    android:text="#2"
+                    android:textColor="@color/Gray_300"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_write"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/pretendard_semibold"
+                    android:text="작성하기"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_num"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_num" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/pretendard_semibold"
+                    android:text="최애와 내가 자주 듣는 곡!"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_num"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_num" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_written"
+                android:layout_width="match_parent"
+                android:layout_height="259dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_challenge">
+
+                <TextView
+                    android:id="@+id/tv_num_written"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/blatant_bold"
+                    android:text="#2"
+                    android:textColor="@color/Gray_300"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_title_written"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/pretendard_semibold"
+                    android:text="닮은 버릇이 있다면?"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_num_written"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_num_written" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/pretendard_semibold"
+                    android:text="더보기"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_num_written"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_num_written" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="0dp"
+                    android:layout_height="92dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="지성이는 코 찡긋 거리는 버릇이 있는데."
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_more"
+                    app:layout_constraintStart_toStartOf="@+id/tv_title_written"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title_written" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/blatant_regular"
+                    android:text="2022.12.21"
+                    android:textColor="@color/Gray_400"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

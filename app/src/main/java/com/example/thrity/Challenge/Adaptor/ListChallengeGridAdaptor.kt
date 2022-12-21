@@ -1,5 +1,6 @@
 package com.example.thrity.Challenge.Adaptor
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -8,10 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.thrity.Challenge.ChallengePost
 import com.example.thrity.ChallengeGridData
 import com.example.thrity.databinding.ChallengeGridItemBinding
+import com.example.thrity.databinding.FragmentChallengeBinding
 
-class ListChallengeGridAdaptor (var challengeGridList: ArrayList<ChallengeGridData>): RecyclerView.Adapter<ListChallengeGridAdaptor.ChallengeGridDataViewHolder>(){
+class ListChallengeGridAdaptor (var challengeGridList: ArrayList<ChallengeGridData>, val itemClick: (ChallengeGridData) -> Unit): RecyclerView.Adapter<ListChallengeGridAdaptor.ChallengeGridDataViewHolder>(){
 
-    inner class ChallengeGridDataViewHolder(private val viewBinding: ChallengeGridItemBinding) : RecyclerView.ViewHolder(viewBinding.root) {
+    inner class ChallengeGridDataViewHolder(private val viewBinding: ChallengeGridItemBinding, itemClick: (ChallengeGridData) -> Unit) : RecyclerView.ViewHolder(viewBinding.root) {
         private val context = viewBinding.root.context
         fun bind(data: ChallengeGridData) = with(viewBinding){
             tvGridNum.text = data.num
@@ -39,19 +41,23 @@ class ListChallengeGridAdaptor (var challengeGridList: ArrayList<ChallengeGridDa
                 }
             }
 
-            //RecyclerView Click Event
             itemView.setOnClickListener {
-                val intent = Intent(context,ChallengePost::class.java)
-                intent.putExtra("numData",data.num)
-                intent.run { context.startActivity(this) }
+                itemClick(data)
             }
+
+            //RecyclerView Click Event
+//            itemView.setOnClickListener {
+//                val intent = Intent(context,ChallengePost::class.java)
+//                intent.putExtra("numData",data.num)
+//                intent.run { context.startActivity(this) }
+//            }
 
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChallengeGridDataViewHolder {
         val layout = ChallengeGridItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return  ChallengeGridDataViewHolder(layout)
+        return  ChallengeGridDataViewHolder(layout, itemClick)
     }
 
     override fun onBindViewHolder(holder: ChallengeGridDataViewHolder, position: Int) {

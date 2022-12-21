@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ScrollView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -51,7 +52,17 @@ class ChallengeFragment: Fragment() {
         }
 
         val gridListManager = GridLayoutManager(context, 6)
-        val gridListAdapter = ListChallengeGridAdaptor(gridList)
+        val gridListAdapter = ListChallengeGridAdaptor(gridList){
+            //RecyclerView Click 시 실행
+            Data -> viewBinding.layoutNon.visibility = View.VISIBLE
+            viewBinding.vertical.fullScroll(ScrollView.FOCUS_DOWN)
+            viewBinding.tvNum.text = "#"+Data.num
+            viewBinding.tvWrite.setOnClickListener {
+                val intent = Intent(context,ChallengePost::class.java)
+                intent.putExtra("numData",Data.num)
+                startActivity(intent)
+            }
+        }
         viewBinding.rvChallenge.adapter = gridListAdapter
         viewBinding.rvChallenge.layoutManager = gridListManager
         viewBinding.rvChallenge.addItemDecoration(ItemDecorator(0))
