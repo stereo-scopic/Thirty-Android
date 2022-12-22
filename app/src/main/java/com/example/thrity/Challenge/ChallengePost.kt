@@ -2,9 +2,11 @@ package com.example.thrity.Challenge
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.bumptech.glide.Glide
+import com.example.thrity.R
 import com.example.thrity.databinding.ActivityChallengePostBinding
 
 class ChallengePost : AppCompatActivity() {
@@ -25,6 +27,30 @@ class ChallengePost : AppCompatActivity() {
             finish()
         }
 
+        viewBinding.btnImgDelete.setOnClickListener {
+            viewBinding.layoutImage.visibility = View.GONE
+        }
+
+        viewBinding.btnStamp.setOnClickListener {
+            viewBinding.layoutStamp.visibility = View.VISIBLE
+            viewBinding.btnStampGreen.setOnClickListener {
+                viewBinding.imgStamp.visibility = View.VISIBLE
+                viewBinding.imgStamp.setImageResource(R.drawable.stamp_green)
+                viewBinding.layoutStamp.visibility = View.GONE
+            }
+            viewBinding.btnStampYellow.setOnClickListener {
+                viewBinding.imgStamp.visibility = View.VISIBLE
+                viewBinding.imgStamp.setImageResource(R.drawable.stamp_yellow)
+                viewBinding.layoutStamp.visibility = View.GONE
+            }
+            viewBinding.btnStampRed.setOnClickListener {
+                viewBinding.imgStamp.visibility = View.VISIBLE
+                viewBinding.imgStamp.setImageResource(R.drawable.stamp_red)
+                viewBinding.layoutStamp.visibility = View.GONE
+            }
+        }
+
+
         val titleNum = intent.getStringExtra("numData")
         viewBinding.tvNum.text = "#"+titleNum
     }
@@ -44,6 +70,9 @@ class ChallengePost : AppCompatActivity() {
     private val readImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
         Glide.with(this)
             .load(uri)
-            .into(viewBinding.image)
+            .override(400, 400)
+            .centerCrop()
+            .into(viewBinding.imgSet)
+        viewBinding.layoutImage.visibility = View.VISIBLE
     }
 }
