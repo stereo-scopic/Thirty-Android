@@ -31,6 +31,7 @@ class ChallengePost : AppCompatActivity() {
             viewBinding.layoutImage.visibility = View.GONE
         }
 
+        //stamp button
         viewBinding.btnStamp.setOnClickListener {
             viewBinding.layoutStamp.visibility = View.VISIBLE
             viewBinding.btnStampGreen.setOnClickListener {
@@ -73,6 +74,12 @@ class ChallengePost : AppCompatActivity() {
             .override(400, 400)
             .centerCrop()
             .into(viewBinding.imgSet)
-        viewBinding.layoutImage.visibility = View.VISIBLE
+        if (uri != null){
+            viewBinding.layoutImage.visibility = View.VISIBLE
+        }else{
+            if (uri == null){
+                viewBinding.layoutImage.visibility = View.GONE
+            }
+        }
     }
 }
