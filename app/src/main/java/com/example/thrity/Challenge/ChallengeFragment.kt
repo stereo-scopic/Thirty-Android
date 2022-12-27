@@ -14,6 +14,7 @@ import com.example.thrity.ChallengeGridData
 import com.example.thrity.ItemDecorator
 import com.example.thrity.Challenge.Adaptor.ListChallengeGridAdaptor
 import com.example.thrity.ChallengeListData
+import com.example.thrity.R
 import com.example.thrity.databinding.FragmentChallengeBinding
 
 class ChallengeFragment: Fragment() {
@@ -38,8 +39,11 @@ class ChallengeFragment: Fragment() {
             add(ChallengeListData("최애 공통점 찾기 챌린지"))
         }
 
-        val listRVAdaptor = ListChallengeAdaptor(list)
+        //RecyclerView Click 시 실행
         val listManager = LinearLayoutManager.HORIZONTAL
+        val listRVAdaptor = ListChallengeAdaptor(list){
+//            Data -> viewBinding.rvList.setBackgroundResource(R.drawable.challenge_list_stroke)
+        }
         viewBinding.rvList.adapter = listRVAdaptor
         viewBinding.rvList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
