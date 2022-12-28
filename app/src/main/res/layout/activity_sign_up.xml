@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/title_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_semibold"
+        android:text="회원가입"
+        android:textColor="@color/THIRTY_BLACK"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="54dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_certification"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nestedScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nestedScrollView2">
+
+        <TextView
+            android:id="@+id/tv_agree2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:layout_marginBottom="44dp"
+            android:text="회원가입 시 써티의 서비스 이용 약관과 개인정보 보호 정책에 동의하게 됩니다."
+            android:textColor="@color/Gray_400"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_registerDone"
+            app:layout_constraintStart_toStartOf="@+id/btn_registerDone"
+            app:layout_constraintTop_toBottomOf="@+id/btn_registerDone" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_registerDone"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="100dp"
+            android:background="@color/Gray_300"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tv_registerDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="회원가입 완료하기"
+                android:textColor="@color/THIRTY_WHITE"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/tv_editCertification"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/Gray_100"
+            android:fontFamily="@font/pretendard_regular"
+            android:hint="인증코드를 입력해주세요."
+            android:textColor="@color/THIRTY_BLACK"
+            android:textColorHint="@color/Gray_500"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_certification" />
+
+        <TextView
+            android:id="@+id/tv_certification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:text="인증코드"
+            android:textColor="@color/THIRTY_BLACK"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_setting">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_wrongPasswordCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="비밀번호와 일치하지 않습니다."
+                android:textColor="@color/THIRTY_RED"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tv_editPasswordCheck"
+                app:layout_constraintTop_toBottomOf="@+id/tv_editPasswordCheck" />
+
+            <EditText
+                android:id="@+id/tv_editPasswordCheck"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/Gray_100"
+                android:fontFamily="@font/pretendard_regular"
+                android:hint="비밀번호를 다시 한 번 입력해주세요."
+                android:textColor="@color/THIRTY_BLACK"
+                android:textColorHint="@color/Gray_500"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_passwordCheck" />
+
+            <TextView
+                android:id="@+id/tv_passwordCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="비밀번호 확인"
+                android:textColor="@color/THIRTY_BLACK"
+                app:layout_constraintStart_toStartOf="@+id/tv_editPassword"
+                app:layout_constraintTop_toBottomOf="@+id/tv_editPassword" />
+
+            <EditText
+                android:id="@+id/tv_editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/Gray_100"
+                android:fontFamily="@font/pretendard_regular"
+                android:hint="비밀번호를 입력해주세요."
+                android:textColor="@color/THIRTY_BLACK"
+                android:textColorHint="@color/Gray_500"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="비밀번호"
+                android:textColor="@color/THIRTY_BLACK"
+                app:layout_constraintStart_toStartOf="@+id/tv_editEmail"
+                app:layout_constraintTop_toBottomOf="@+id/tv_editEmail" />
+
+            <EditText
+                android:id="@+id/tv_editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/Gray_100"
+                android:fontFamily="@font/pretendard_regular"
+                android:hint="이메일을 입력해주세요."
+                android:textColor="@color/THIRTY_BLACK"
+                android:textColorHint="@color/Gray_500"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="이메일"
+                android:textColor="@color/THIRTY_BLACK"
+                app:layout_constraintStart_toStartOf="@+id/tv_editName"
+                app:layout_constraintTop_toBottomOf="@+id/tv_editName" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="닉네임"
+                android:textColor="@color/THIRTY_BLACK"
+                app:layout_constraintStart_toStartOf="@+id/tv_editName"
+                app:layout_constraintTop_toBottomOf="@+id/title_setting" />
+
+            <EditText
+                android:id="@+id/tv_editName"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/Gray_100"
+                android:fontFamily="@font/pretendard_regular"
+                android:hint="닉네임을 지정해주세요."
+                android:textColor="@color/THIRTY_BLACK"
+                android:textColorHint="@color/Gray_500"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_wrong1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="사용할 수 없는 닉네임이에요."
+                android:textColor="@color/THIRTY_RED"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tv_editName"
+                app:layout_constraintTop_toBottomOf="@+id/tv_editName" />
+
+            <TextView
+                android:id="@+id/tv_wrongPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="영문 대소문자, 숫자, 특수문자를 모두 조합 (8자 이상)"
+                android:textColor="@color/Gray_400"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/tv_editPassword"
+                app:layout_constraintTop_toBottomOf="@+id/tv_editPassword" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_getEmail"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="116dp"
+                android:layout_marginBottom="100dp"
+                android:background="@color/Gray_300"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_editPasswordCheck"
+                app:layout_constraintStart_toStartOf="@+id/tv_editPasswordCheck"
+                app:layout_constraintTop_toBottomOf="@+id/tv_editPasswordCheck">
+
+                <TextView
+                    android:id="@+id/tv_getEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_semibold"
+                    android:text="인증 이메일 받기"
+                    android:textColor="@color/THIRTY_WHITE"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="41dp"
+                android:text="회원가입 시 써티의 서비스 이용 약관과 개인정보 보호 정책에 동의하게 됩니다."
+                android:textColor="@color/Gray_400"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_getEmail"
+                app:layout_constraintStart_toStartOf="@+id/btn_getEmail"
+                app:layout_constraintTop_toBottomOf="@+id/btn_getEmail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
