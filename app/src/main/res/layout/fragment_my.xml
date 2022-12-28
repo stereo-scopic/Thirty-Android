@@ -172,6 +172,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:checked="true"
+            android:switchMinWidth="56dp"
+            android:thumb="@drawable/thumb_selector"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_timeValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_timeValue"
+            app:thumbTint="@color/white"
+            app:track="@drawable/track_selector"
+            app:trackTintMode="multiply" />
+
         <TextView
             android:id="@+id/tv_service"
             android:layout_width="wrap_content"
