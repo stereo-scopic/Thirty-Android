@@ -14,6 +14,8 @@ import com.example.thrity.ChallengeGridData
 import com.example.thrity.ItemDecorator
 import com.example.thrity.Challenge.Adaptor.ListChallengeGridAdaptor
 import com.example.thrity.ChallengeListData
+import com.example.thrity.Explore.ExploreFragment
+import com.example.thrity.Explore.Hobby
 import com.example.thrity.R
 import com.example.thrity.databinding.FragmentChallengeBinding
 
@@ -25,6 +27,11 @@ class ChallengeFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         viewBinding = FragmentChallengeBinding.inflate(layoutInflater)
+
+        viewBinding.btnGoChallenge.setOnClickListener{
+            val intent = Intent(context, Hobby::class.java)
+            startActivity(intent)
+        }
 
         //List RecyclerView
         val list: ArrayList<ChallengeListData> = arrayListOf()
