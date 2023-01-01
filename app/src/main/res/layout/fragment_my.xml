@@ -18,51 +18,98 @@
         app:layout_constraintVertical_weight="0.45">
 
 
-        <TextView
-            android:id="@+id/tv_badgeNum"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_friend"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            app:layout_constraintStart_toEndOf="@+id/layout_badge"
+            app:layout_constraintTop_toTopOf="@+id/layout_badge">
+
+            <TextView
+                android:id="@+id/tv_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="친구"
+                android:textColor="@color/THIRTY_WHITE"
+                app:layout_constraintStart_toStartOf="@+id/tv_friendNum"
+                app:layout_constraintTop_toBottomOf="@+id/tv_friendNum" />
+
+            <TextView
+                android:id="@+id/tv_friendNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blatant_bold"
+                android:text="11"
+                android:textColor="@color/THIRTY_WHITE"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_badge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="92dp"
-            android:fontFamily="@font/blatant_bold"
-            android:text="11"
-            android:textColor="@color/THIRTY_WHITE"
-            android:textSize="25sp"
-            app:layout_constraintStart_toEndOf="@+id/tv_finishNum"
-            app:layout_constraintTop_toTopOf="@+id/tv_finishNum" />
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@+id/layout_finish"
+            app:layout_constraintTop_toTopOf="@+id/layout_finish">
 
-        <TextView
-            android:id="@+id/tv_badge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/pretendard_regular"
-            android:text="내 배지"
-            android:textColor="@color/THIRTY_WHITE"
-            app:layout_constraintStart_toStartOf="@+id/tv_badgeNum"
-            app:layout_constraintTop_toBottomOf="@+id/tv_badgeNum" />
+            <TextView
+                android:id="@+id/tv_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="내 배지"
+                android:textColor="@color/THIRTY_WHITE"
+                app:layout_constraintStart_toStartOf="@+id/tv_badgeNum"
+                app:layout_constraintTop_toBottomOf="@+id/tv_badgeNum" />
 
-        <TextView
-            android:id="@+id/tv_friend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/pretendard_regular"
-            android:text="친구"
-            android:textColor="@color/THIRTY_WHITE"
-            app:layout_constraintStart_toStartOf="@+id/tv_friendNum"
-            app:layout_constraintTop_toBottomOf="@+id/tv_friendNum" />
+            <TextView
+                android:id="@+id/tv_badgeNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blatant_bold"
+                android:text="11"
+                android:textColor="@color/THIRTY_WHITE"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/tv_finishNum"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_finish"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"
-            android:fontFamily="@font/blatant_bold"
-            android:text="11"
-            android:textColor="@color/THIRTY_WHITE"
-            android:textSize="25sp"
             app:layout_constraintStart_toStartOf="@+id/tv_userAuth"
-            app:layout_constraintTop_toBottomOf="@+id/tv_userAuth" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_userAuth">
+
+            <TextView
+                android:id="@+id/tv_finishNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blatant_bold"
+                android:text="11"
+                android:textColor="@color/THIRTY_WHITE"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="완수한 챌린지"
+                android:textColor="@color/THIRTY_WHITE"
+                app:layout_constraintStart_toStartOf="@+id/tv_finishNum"
+                app:layout_constraintTop_toBottomOf="@+id/tv_finishNum" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/btn_mycopy"
@@ -89,18 +136,6 @@
             app:layout_constraintTop_toBottomOf="@+id/title_my" />
 
         <TextView
-            android:id="@+id/tv_friendNum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="92dp"
-            android:fontFamily="@font/blatant_bold"
-            android:text="11"
-            android:textColor="@color/THIRTY_WHITE"
-            android:textSize="25sp"
-            app:layout_constraintStart_toEndOf="@+id/tv_badgeNum"
-            app:layout_constraintTop_toTopOf="@+id/tv_badgeNum" />
-
-        <TextView
             android:id="@+id/title_my"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,17 +159,6 @@
             app:layout_constraintTop_toTopOf="@+id/title_my"
             app:srcCompat="@drawable/ic_baseline_settings_24"
             app:tint="@color/THIRTY_WHITE" />
-
-        <TextView
-            android:id="@+id/tv_finish"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/pretendard_regular"
-            android:text="완수한 챌린지"
-            android:textColor="@color/THIRTY_WHITE"
-            app:layout_constraintStart_toStartOf="@+id/tv_finishNum"
-            app:layout_constraintTop_toBottomOf="@+id/tv_finishNum" />
 
         <TextView
             android:id="@+id/tv_userAuth"
@@ -201,27 +225,31 @@
 
         <TextView
             android:id="@+id/tv_notice"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="18dp"
             android:fontFamily="@font/pretendard_regular"
+            android:paddingVertical="10dp"
             android:text="공지사항"
             android:textColor="@color/THIRTY_BLACK"
             android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_service" />
 
         <TextView
             android:id="@+id/tv_notice2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/pretendard_regular"
+            android:paddingVertical="10dp"
             android:text="문의하기"
             android:textColor="@color/THIRTY_BLACK"
             android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_notice" />
 
