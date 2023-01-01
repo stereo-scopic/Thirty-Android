@@ -1,5 +1,6 @@
 package com.example.thrity.Community
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.thrity.ComData
 import com.example.thrity.Community.Adaptor.ListCommunityAdaptor
+import com.example.thrity.SignInActivity
 import com.example.thrity.databinding.FragmentCommunityFriendBinding
 
 class CommunityFriendFragment: Fragment() {
@@ -18,6 +20,12 @@ class CommunityFriendFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         viewBinding = FragmentCommunityFriendBinding.inflate(layoutInflater)
+
+        viewBinding.btnGoSignIn.setOnClickListener {
+            val intent = Intent(context, SignInActivity::class.java)
+            startActivity(intent)
+        }
+
         val list : ArrayList<ComData> = arrayListOf()
         list.apply{
             add(ComData("깨찰빵", "아이돌 덕질 챌린지", "#3", "닮은 버릇이 있다면?","지성이는 코 찡긋거리는 버릇이 있는데, 이렇게 해서 손을 대지 않고 코를 긁는 것 같다.", "12-09"))
