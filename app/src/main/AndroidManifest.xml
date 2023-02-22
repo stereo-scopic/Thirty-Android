@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.thrity">
+    <!-- 갤러리 권한 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 갤러리 권한 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Thrity"
+        tools:targetApi="31">
+        <activity
+            android:name=".DropOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasswordFindActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".Explore.ChallengeDetail"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".My.DoneChallenge"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".My.Badge"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".Challenge.ChallengePost"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".My.Notice"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".My.SettingShareRange"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".My.SettingAlarm"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".My.SettingMy"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".My.Setting"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".Explore.Hobby"
+            android:exported="false"
+            android:theme="@style/TransparentStatusTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/TransparentStatusTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutListItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="24dp">
+
+    <ImageView
+        android:id="@+id/list_item_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list_item_example" />
+
+    <TextView
+        android:id="@+id/tv_listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/pretendard_semibold"
+        android:text="챌린지 이름"
+        android:textColor="@color/THIRTY_BLACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/list_item_example"
+        app:layout_constraintTop_toBottomOf="@+id/list_item_example" />
+
+    <TextView
+        android:id="@+id/tv_listDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:text="챌린지 설명...블라블라"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_listTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_listTitle" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/pretendard_regular"
+        android:text="+"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/THIRTY_WHITE"
+        android:textSize="35sp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/list_item_example"
+        app:layout_constraintEnd_toEndOf="@+id/list_item_example" />
+
+    <ImageView
+        android:id="@+id/img_check"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/list_item_example"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/challenge_check" />
+</androidx.constraintlayout.widget.ConstraintLayout>

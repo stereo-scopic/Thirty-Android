@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Explore.ChallengeDetail">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="54dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/arrow_left" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_challengeAdd"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="최애 공통점 찾기 챌린지"
+                android:textColor="@color/THIRTY_BLACK"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/rv_challengeAdd"
+                app:layout_constraintTop_toBottomOf="@+id/rv_challengeAdd" />
+
+            <TextView
+                android:id="@+id/tv_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="25명이 이 챌린지를 하고 있어요"
+                app:layout_constraintStart_toStartOf="@+id/tv_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+            <Button
+                android:id="@+id/btn_challengeAdd"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@color/THIRTY_BLACK"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="추가하기"
+                android:textColor="@color/THIRTY_WHITE"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_people"
+                app:layout_constraintEnd_toEndOf="@id/rv_challengeAdd"
+                app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="start|fill_horizontal"
+                android:text="최애의 라이프스타일을 하나씩 파헤쳐보고 공통점을 찾아보자!"
+                android:textColor="@color/THIRTY_BLACK"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_people" />
+
+            <Button
+                android:id="@+id/btn_challengeClicked"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@color/Gray_300"
+                android:fontFamily="@font/pretendard_semibold"
+                android:stateListAnimator="@null"
+                android:text="추가됨"
+                android:textColor="@color/THIRTY_WHITE"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_people"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="361dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/Gray_100"
+                android:overScrollMode="never"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tv_subtitle"
+                app:layout_constraintStart_toStartOf="@+id/tv_subtitle"
+                app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_title"
+                android:layout_width="0dp"
+                android:layout_height="361dp"
+                android:overScrollMode="never"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+            <ImageView
+                android:id="@+id/img_fade"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/view"
+                app:srcCompat="@drawable/explore_title_lock" />
+
+            <TextView
+                android:id="@+id/tv_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="55dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:text="챌린지를 담아보세요."
+                android:textColor="@color/Gray_500"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view" />
+
+            <ImageView
+                android:id="@+id/ico_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/tv_guide"
+                app:layout_constraintEnd_toEndOf="@+id/tv_guide"
+                app:layout_constraintStart_toStartOf="@+id/tv_guide"
+                app:srcCompat="@drawable/explore_ico_lock" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

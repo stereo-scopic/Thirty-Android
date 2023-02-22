@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/seekbar_thumb_1"
+        android:width="35dp"
+        android:height="42dp"
+        android:left="20dp"
+        android:right="10dp"
+        android:bottom="25dp">
+<!--        <shape>-->
+<!--            <padding-->
+<!--                android:bottom="50dp"-->
+<!--                android:left="50dp"-->
+<!--                android:right="50dp" />-->
+<!--        </shape>-->
+    </item>
+</layer-list>

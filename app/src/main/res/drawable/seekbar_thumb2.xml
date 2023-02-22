@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/seekbar_thumb_2"
+        android:width="29dp"
+        android:height="38dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:bottom="25dp">
+    </item>
+</layer-list>

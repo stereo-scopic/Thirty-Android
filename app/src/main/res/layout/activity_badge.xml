@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Explore.Hobby">
+
+    <TextView
+        android:id="@+id/title_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_semibold"
+        android:text="내 배지"
+        android:textColor="@color/THIRTY_BLACK"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="54dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_setting">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                app:layout_constraintVertical_chainStyle="spread">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="똑똑똑\n있어요?"
+                    android:textAlignment="center"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/badge7"
+                    app:layout_constraintStart_toStartOf="@+id/badge7"
+                    app:layout_constraintTop_toBottomOf="@+id/badge7" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="생각보다 나 좀 \n잘하는 듯"
+                    android:textAlignment="center"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/badge8"
+                    app:layout_constraintStart_toStartOf="@+id/badge8"
+                    app:layout_constraintTop_toBottomOf="@+id/badge8" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="이제 도전은\n일상!"
+                    android:textAlignment="center"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/badge9"
+                    app:layout_constraintStart_toStartOf="@+id/badge9"
+                    app:layout_constraintTop_toBottomOf="@+id/badge9" />
+
+                <ImageView
+                    android:id="@+id/badge7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@+id/badge8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/setting_badge" />
+
+                <ImageView
+                    android:id="@+id/badge8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/badge7"
+                    app:layout_constraintEnd_toStartOf="@id/badge9"
+                    app:layout_constraintStart_toEndOf="@+id/badge7"
+                    app:layout_constraintTop_toTopOf="@+id/badge7"
+                    app:srcCompat="@drawable/setting_badge" />
+
+                <ImageView
+                    android:id="@+id/badge9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/badge8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/badge8"
+                    app:layout_constraintTop_toTopOf="@+id/badge8"
+                    app:srcCompat="@drawable/setting_badge" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintVertical_chainStyle="spread">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="시작이\n반이다"
+                    android:textAlignment="center"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/badge4"
+                    app:layout_constraintStart_toStartOf="@+id/badge4"
+                    app:layout_constraintTop_toBottomOf="@+id/badge4" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="여기서 끝날\n수는 없지"
+                    android:textAlignment="center"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/badge5"
+                    app:layout_constraintStart_toStartOf="@+id/badge5"
+                    app:layout_constraintTop_toBottomOf="@+id/badge5" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="이제 나도\n챌린지 달인"
+                    android:textAlignment="center"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/badge6"
+                    app:layout_constraintStart_toStartOf="@+id/badge6"
+                    app:layout_constraintTop_toBottomOf="@+id/badge6" />
+
+                <ImageView
+                    android:id="@+id/badge4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@+id/badge5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/setting_badge" />
+
+                <ImageView
+                    android:id="@+id/badge5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/badge4"
+                    app:layout_constraintEnd_toStartOf="@id/badge6"
+                    app:layout_constraintStart_toEndOf="@+id/badge4"
+                    app:layout_constraintTop_toTopOf="@+id/badge4"
+                    app:srcCompat="@drawable/setting_badge" />
+
+                <ImageView
+                    android:id="@+id/badge6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/badge5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/badge5"
+                    app:layout_constraintTop_toTopOf="@+id/badge5"
+                    app:srcCompat="@drawable/setting_badge" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/img_count"
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/union" />
+
+            <TextView
+                android:id="@+id/tv_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="108dp"
+                android:fontFamily="@font/blatant_regular"
+                android:text="/ 9"
+                android:textColor="@color/Gray_700"
+                android:textSize="58dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_count"
+                app:layout_constraintEnd_toEndOf="@+id/img_count"
+                app:layout_constraintStart_toEndOf="@+id/tv_count"
+                app:layout_constraintTop_toTopOf="@+id/tv_count"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/blatant_regular"
+                android:text="0"
+                android:textColor="@color/THIRTY_WHITE"
+                android:textSize="58dp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_count"
+                app:layout_constraintEnd_toStartOf="@+id/tv_nine"
+                app:layout_constraintStart_toStartOf="@+id/img_count"
+                app:layout_constraintTop_toTopOf="@+id/img_count"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_marginTop="31dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_count"
+                app:layout_constraintVertical_chainStyle="spread">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="나는\n슈퍼스타"
+                    android:textAlignment="center"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/badge3"
+                    app:layout_constraintStart_toStartOf="@+id/badge3"
+                    app:layout_constraintTop_toBottomOf="@+id/badge3" />
+
+                <ImageView
+                    android:id="@+id/badge1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toStartOf="@+id/badge2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/setting_badge" />
+
+                <ImageView
+                    android:id="@+id/badge2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/badge1"
+                    app:layout_constraintEnd_toStartOf="@id/badge3"
+                    app:layout_constraintStart_toEndOf="@+id/badge1"
+                    app:layout_constraintTop_toTopOf="@+id/badge1"
+                    app:srcCompat="@drawable/setting_badge" />
+
+                <ImageView
+                    android:id="@+id/badge3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/badge2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/badge2"
+                    app:layout_constraintTop_toTopOf="@+id/badge2"
+                    app:srcCompat="@drawable/setting_badge" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="부끄러운\n새학기"
+                    android:textAlignment="center"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/badge1"
+                    app:layout_constraintStart_toStartOf="@+id/badge1"
+                    app:layout_constraintTop_toBottomOf="@+id/badge1" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="무리지어\n다니기"
+                    android:textAlignment="center"
+                    android:textColor="@color/THIRTY_BLACK"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/badge2"
+                    app:layout_constraintStart_toStartOf="@+id/badge2"
+                    app:layout_constraintTop_toBottomOf="@+id/badge2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

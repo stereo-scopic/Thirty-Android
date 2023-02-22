@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Thrity</string>
+    <string name="menu_my">MY</string>
+    <string name="menu_challenge">CHALLENGE</string>
+    <string name="menu_explore">EXPLORE</string>
+    <string name="menu_community">COMMUNITY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

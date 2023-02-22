@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_challenge"
+        android:title="@string/menu_challenge"
+        android:icon="@drawable/nav_challenge"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_explore"
+        android:title="@string/menu_explore"
+        android:icon="@drawable/nav_explore"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_community"
+        android:title="@string/menu_community"
+        android:icon="@drawable/nav_community"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_my"
+        android:title="@string/menu_my"
+        android:icon="@drawable/nav_my"
+        android:enabled="true"/>
+
+
+</menu>
