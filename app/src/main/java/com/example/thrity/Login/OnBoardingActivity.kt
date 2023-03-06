@@ -1,7 +1,8 @@
-package com.example.thrity
+package com.example.thrity.Login
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.thrity.R
 import com.example.thrity.databinding.ActivityOnboardingBinding
 
 class OnBoardingActivity : AppCompatActivity() {

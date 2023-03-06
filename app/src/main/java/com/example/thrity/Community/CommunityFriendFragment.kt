@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.thrity.ComData
 import com.example.thrity.Community.Adaptor.ListCommunityAdaptor
-import com.example.thrity.SignInActivity
+import com.example.thrity.Login.SignInActivity
 import com.example.thrity.databinding.FragmentCommunityFriendBinding
 
 class CommunityFriendFragment: Fragment() {

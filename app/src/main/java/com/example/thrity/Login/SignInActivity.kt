@@ -1,4 +1,4 @@
-package com.example.thrity
+package com.example.thrity.Login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

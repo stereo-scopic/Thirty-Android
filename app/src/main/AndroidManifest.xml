@@ -22,14 +22,14 @@
             android:name=".DropOutActivity"
             android:exported="false" />
         <activity
-            android:name=".PasswordFindActivity"
+            android:name=".Login.PasswordFindActivity"
             android:exported="false" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".Login.SignInActivity"
             android:exported="false"
             android:theme="@style/TransparentStatusTheme" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".Login.SignUpActivity"
             android:exported="false"
             android:theme="@style/TransparentStatusTheme" />
         <activity
